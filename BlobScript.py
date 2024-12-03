@@ -24,3 +24,4 @@ with open(local_file_path, "rb") as data:
     blob_client = container_client.get_blob_client(blob_name)
     blob_client.upload_blob(data, overwrite=True)  # overwrite=True to replace an existing file
     print(f"File '{blob_name}' uploaded to container '{container_name}'.")
+    
